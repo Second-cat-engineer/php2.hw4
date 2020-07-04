@@ -17,7 +17,7 @@
     <div class="label-danger padding">
         <ul class="pager menu">
             <li>
-                <a href="/index.php">
+                <a href="/">
                     <span class="glyphicon glyphicon-home"></span>
                     <div> Главная страница </div>
                 </a>

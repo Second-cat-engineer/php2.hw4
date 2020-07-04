@@ -1,6 +1,6 @@
 <h1> Редактирование статьи </h1>
 
-<form action="/saveEditArticle.php" method="post">
+<form action="/admin/article/save" method="post">
     <textarea name="title" cols="100" rows="2"><?php echo $this->article->title; ?></textarea>
     <br>
     <textarea name="content" cols="100" rows="30"><?php echo $this->article->content; ?></textarea>

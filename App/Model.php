@@ -102,16 +102,10 @@ abstract class Model
 
     public function delete(): bool
     {
-        if (null === $this->id) {
-            return false;
-        }
         $data[':id'] = $this->id;
         $sql = 'DELETE FROM ' . static::TABLE . ' WHERE id=:id';
+
         $db = Db::instance();
-        $res = $db->execute($sql, $data);
-        if (false === $res) {
-            return false;
-        }
-        return $res;
+        return $db->execute($sql, $data);
     }
 }

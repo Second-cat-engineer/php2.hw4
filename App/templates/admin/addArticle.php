@@ -1,6 +1,6 @@
 <h1> Добавление статьи </h1>
 
-<form action="/saveNewArticle.php" method="post">
+<form action="/admin/article/save" method="post">
     Заголовок <br>
     <textarea name="title" cols="100" rows="2"></textarea>
     <br>

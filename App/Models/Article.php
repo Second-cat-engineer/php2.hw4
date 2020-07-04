@@ -5,7 +5,7 @@ namespace App\Models;
 use App\Model;
 
 /**
- * Class Article
+ * Class One
  * @property $title
  * @property $content
  * @property int $author_id

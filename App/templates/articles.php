@@ -17,7 +17,7 @@
     <div class="label-danger padding">
         <ul class="pager menu">
             <li>
-                <a href="/index.php">
+                <a href="/">
                     <span class="glyphicon glyphicon-home"></span>
                     <div> Главная страница </div>
                 </a>
@@ -32,14 +32,14 @@
                 <div class="col-sm-12 col-md-4">
                     <div class="thumbnail">
                         <div class="caption">
-                            <a href="/article.php?id=<?php echo $article->getId() ?>">
+                            <a href="/article/one/?id=<?php echo $article->getId() ?>">
                                 <h2><?php echo $article->title; ?></h2>
                             </a>
                         </div>
                         <div>
                             <?php echo substr($article->content, 0, 200); ?>
                             ...
-                            <a href="/article.php?id=<?php echo $article->getId() ?>">
+                            <a href="/article/one/?id=<?php echo $article->getId() ?>">
                                 читать далее
                             </a>
                         </div>

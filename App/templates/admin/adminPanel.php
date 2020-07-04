@@ -16,14 +16,14 @@
             <td><?php echo substr($article->content, 0, 200); ?></td>
             <td><?php echo $article->author_id; ?></td>
             <td>
-                <form action= "/editArticle.php" method= "post" >
+                <form action= "/admin/article/edit" method= "post" >
                     <button name="id" value="<?php echo $article->getId() ?>">
                         Редактировать
                     </button>
                 </form>
             </td>
             <td>
-                <form action= "/deleteArticle.php" method= "post" >
+                <form action= "/admin/article/delete" method= "post" >
                     <button name="id" value="<?php echo $article->getId() ?>">
                         Удалить статью
                     </button>
@@ -32,4 +32,4 @@
         </tr>
     <?php } ?>
 </table>
-<a href="/addArticle.php"> Добавить новую статью </a>
+<a href="/admin/article/add"> Добавить новую статью </a>
